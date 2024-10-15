@@ -2,7 +2,10 @@
 Dataset - [[link]](https://www.kaggle.com/datasets/pritam1202/phenotype-gene-embeddings) <br>
 Video link for project walkthrough - [[link]](https://drive.google.com/file/d/1DLlnf9h2_6L1W4fdAVzU5pXguzyS6JN8/view?usp=drive_link) <br>
 Unique Hash Value : 
-'4d69fbe946a2991088aa9242f15452b9'
+'4d69fbe946a2991088aa9242f15452b9'<br>
+<br>
+The goal of this project is to analyze phenotypes and the associated genes using their embeddings, identifying any pattern between genes that are causal and their corresponding phenotypes. Phenotype refers to a particular trait such as blonde hair or blue eyes and causal gene refers to gene that is responsible for the phenotype. 
+<br> Quality check, cleaning and structuring of raw data were implemented for analysis. Dimensionality reduction and clustering techniques were applied to uncover patterns and similarities between phenotypes and genes.
 
 ## Datasets Used in the Analysis
 - **Phenotypes and genes**: A trait or condition, with associated genes. Out of these, only one gene is causal.
