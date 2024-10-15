@@ -1,6 +1,6 @@
 # Phenotype gene analysis and modelling
-Dataset - https://www.kaggle.com/datasets/pritam1202/phenotype-gene-embeddings <br>
-Video link for project walkthrough - https://drive.google.com/file/d/1DLlnf9h2_6L1W4fdAVzU5pXguzyS6JN8/view?usp=drive_link <br>
+Dataset - [[link]](https://www.kaggle.com/datasets/pritam1202/phenotype-gene-embeddings) <br>
+Video link for project walkthrough - [[link]](https://drive.google.com/file/d/1DLlnf9h2_6L1W4fdAVzU5pXguzyS6JN8/view?usp=drive_link) <br>
 Unique Hash Value : 
 '4d69fbe946a2991088aa9242f15452b9'
 
@@ -27,29 +27,36 @@ The above-mentioned datasets were loaded and gone through. The following steps w
 - The **t-SNE** reduced dimensions were able to capture 97% of the local relations present in the higher dimensions compared to 67% of the **PCA** components. Hence the **t-SNE** dimensions were taken forward.
 
 ### Final Unique Dataset
-- The original embeddings and the reduced dimensions were merged with their corresponding phenotype and genes in the base unique dataset to create the final dataset.
+- The original embeddings and the reduced dimensions were merged with their corresponding phenotype and genes in the base unique dataset to create the final dataset.<br>
+![image](https://github.com/user-attachments/assets/b3aacc3f-fa2e-4e61-8506-92fa4d26695b)
 
 ## Analysis
 The final dataset was analyzed, and the following insights were gathered:
 
 ### Base Analysis
-- 46 phenotypes were observed to have multiple causal genes. Shown below are the top 5 phenotypes among them:
+- 46 phenotypes were observed to have multiple causal genes. Shown below are the top 5 phenotypes among them:<br>
+![image](https://github.com/user-attachments/assets/6476e08d-1062-420d-83a7-699207c97b4d)
 
-- 48 of the genes were observed to be the causal gene for multiple phenotypes. Shown below are the top 5 genes among them:
+- 48 of the genes were observed to be the causal gene for multiple phenotypes. Shown below are the top 5 genes among them:<br>
+![image](https://github.com/user-attachments/assets/8dec9043-6fac-46bb-831c-13ec3623830d)
 
 ### Similarity Analysis
 - The **cosine distance** to check direction similarity and the **euclidean distance** to check magnitude similarity were calculated between each gene and its corresponding phenotype. The parameters were calculated using the original embeddings.
 
-- For multi-causal gene phenotypes, a considerable majority of the causal genes had a lower cosine and euclidean distance from their phenotypes when compared to the non-causal ones. Shown below is for the **Type 2 diabetes** phenotype:
+- For multi-causal gene phenotypes, a considerable majority of the causal genes had a lower cosine and euclidean distance from their phenotypes when compared to the non-causal ones. Shown below is for the **Type 2 diabetes** phenotype:<br>
+![image](https://github.com/user-attachments/assets/ac5c6fab-46ca-4f47-af58-588be8d60a7e)<br>
+Please use this link to view for all multi-causal gene phenotype - [[link]](https://drive.google.com/file/d/1XqPXZ9kuQiTp67YBN-c_Le8I3D7h7tZK/view)
   
-- For mono-causal gene phenotypes, a similar trend was observed where the causal genes were more similar to their phenotypes when compared to non-causal genes. Shown below is for the **Wrist fracture** phenotype:
+- For mono-causal gene phenotypes, a similar trend was observed where the causal genes were more similar to their phenotypes when compared to non-causal genes. Shown below is for the **Wrist fracture** phenotype:<br>
+![image](https://github.com/user-attachments/assets/3e0acf9d-a274-4e09-82cc-4f9f6af74e3b)<br>
+Please use this link to view for all mono-causal gene phenotype - [[link]](https://drive.google.com/file/d/1bEIRpK35R85-d2FnmPbu7LbBqI3qKGq1/view)
 
 - An overall pattern of higher similarity between the phenotype and its causal genes compared to non-causal genes is observed in this case.
 
 ### Clustering
 - The clustering of a particular phenotype was observed to check whether the phenotype and its causal genes end up in the same cluster. The number of clusters was limited to 2 as the target was to check whether the causal gene was in the same cluster as its phenotype. The reduced dimensions were used for clustering visualization.
-- The clustering for the **Type 2 diabetes** phenotype is shown below.
-
+- The clustering for the **Type 2 diabetes** phenotype is shown below.<br>
+![image](https://github.com/user-attachments/assets/38086622-d52c-4b6f-9634-cd699928ab7c)<br>
 Majority of the causal genes are clustered together with the phenotype, indicating greater similarity between the phenotype and its causal gene compared to the non-causal gene.
 
 ## Modelling
